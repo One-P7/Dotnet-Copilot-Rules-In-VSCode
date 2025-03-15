@@ -1,0 +1,44 @@
+{
+    // 啟用聊天 Prompt File 功能
+    "chat.promptFiles": true,
+    // 設定聊天提示檔案的位置
+    "chat.promptFilesLocations": {
+        ".github/prompts": true, // GitHub 提示檔案位置
+        ".vscode/prompts": true  // VSCode 提示檔案位置
+    },
+    // 指定 GitHub Copilot 聊天程式碼生成的  Prompt File 位置
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "text": "解釋時請使用正體中文、台灣用語並且相關專有名詞、技術名詞請使用英文"
+        },
+        {
+            "file": ".vscode/prompts/CodingStyleGuidelines.md"
+        }
+    ],
+    // 指定 GitHub Copilot 聊天提交訊息生成的 Prompt File 位置
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "file": ".vscode/prompts/GitCommitsMessage.md" 
+        }
+    ],
+    // 啟用 GitHub Copilot 選擇審查功能
+    "github.copilot.chat.reviewSelection.enabled": true,
+    // 指定 GitHub Copilot 聊天選擇審查的 Prompt File 位置
+    "github.copilot.chat.reviewSelection.instructions": [
+        {
+            "text": "解釋時請使用正體中文、台灣用語並且相關專有名詞、技術名詞請使用英文"
+        },
+        {
+            "file": ".vscode/prompts/CodingStyleGuidelines.md"
+        }
+    ],
+    // 指定 GitHub Copilot 生成測試的 Prompt File 位置
+    "github.copilot.chat.testGeneration.instructions": [
+        {
+            "text": "解釋時請使用正體中文、台灣用語並且相關專有名詞、技術名詞請使用英文"
+        },
+        {
+            "file": ".vscode/prompts/TestCodeStyleGuidelines.md"
+        }
+    ]
+}
